@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+
+$theme-colors: ("primary": #ff3c38,
+    "secondary": #A23E48,
+    "light": #FFF275,
+    "success": #6C8EAD);
+
+:root {
+    --successBlue: #6C8EAD;
+    --darkBlack: #292f36;
+    --redPrimary: #ff3c38;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.spinner {
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+.navbar-toggler {
+    outline-color: var(--successBlue) !important;
+}
+
+.nav-link {
+    color: var(--darkBlack);
+    text-transform: capitalize;
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    margin: 0 2px;
+}
+
+.nav-icon:hover {
+    color: var(--successBlue);
+}
+
+
+.header {
+    color: whitesmoke;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+    overflow: hidden;
+}
+
+.acc-img {
+    animation-name: zoom;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background: url("./images/toyota-gt-rouge-1440.jpg") no-repeat;
+    min-height: calc(100vh - 68px);
+}
+
+@media only screen and (max-width:468px) {
+    .acc-img {
+        background: url("./images/toyota-gt-rouge-sm.jpg") no-repeat;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2) translateX(-5%);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.section-title-special {
+    background-color: rgba(255, 60, 56, 0.7);
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+    color: white;
+    padding: 20px;
+}
+
+.title-heading {
+    background: rgba(0, 0, 0, 0.4);
+    border-left: 0.4rem solid var(--redPrimary);
+    padding: 0 5px;
+}
+
+.points-icon {
+    background-color: #EAE2B7;
+    border-radius: 50px;
+    font-size: 3rem;
+}
+
+.points-underline {
+    background-color: var(--redPrimary);
+    margin: 1rem auto;
+    height: 0.3rem;
+    width: 4rem;
+
+}
+
+
+.inventaire {
+    background-color: lightgray;
+}
+
+
+.auto-card {
+    border-radius: 0 !important;
+}
+
+.auto-img {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+
+.auto-prix{
+    background-color: var(--redPrimary);
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
