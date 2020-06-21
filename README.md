@@ -7,7 +7,7 @@ Technologies: React, Bootstrap
 ---------------------------------------------
  
 
-This is a responsive front-end design.
+This is a responsive front-end design for a dealership.
 
 Demo: https://loving-jepsen-2cb651.netlify.app/
 
