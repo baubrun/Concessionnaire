@@ -1,3 +1,13 @@
-Ce project est un mise en page front-end d'un concessionnaire.
+Ce project est une conception frontale réactive pour un concessionnaire.
 
-Demo: https://loving-jepsen-2cb651.netlify.app/
+Démo: https://loving-jepsen-2cb651.netlify.app/
+
+Technologies: React, Bootstrap
+
+---------------------------------------------
+
+Demo: 
+
+This is a responsive front-end design.
+
+Technologies: React, Bootstrap
